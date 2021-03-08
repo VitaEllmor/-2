@@ -1,0 +1,40 @@
+﻿<html>
+ <head>
+  <meta charset="utf-8">
+  <title>output</title>
+ </head>
+ <body>
+  <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+    <p>Введите ваш вес в кг: 
+    <input type="number" name=“kg" autofocus></p>
+    <p>Ваш вес в фунтах: <output name="result">0</output></p>
+  <p>Ваш вес в центнерах: <output name="result">0</output></p>
+  </form>
+ </body>
+<p>Введи два числа получи суму :</p>
+    <form oninput = "с.value = a.valueAsNumber + b.valueAsNumber">
+      <input type = "number" id = "a"> +
+      <input type = "number" id = "b"> = 16
+      <mark> <output name = "16" for = "a b"> </output> </mark>
+    </form>
+</p>Сколько вы хотите зарабатывать?:</p>
+<form onsubmit="return false" oninput="level.value = flevel.valueAsNumber">
+  <label for="flying">0</label>
+  <input name="flevel" id="zarplata" type="range" min="0" max="100" value="0"> 
+  <output for="zarplata" name="level">0</output>/100
+</form>
+<form onsubmit="return false" oninput="amount.value = (hours.valueAsNumber * rate.valueAsNumber) + ((hours.valueAsNumber * rate.valueAsNumber) * vat.valueAsNumber)">
+ <legend>Invoice</legend>
+ <p><label for="hours">Количество часов</label>
+  <input type="number" min="0" id="hours" name="hours"></p>
+ <p><label for="rate">Ставка</label>
+  <span>£</span><input type="number" min="0" id="rate" name="rate"></p>
+ <p><label for="vat">Налог</label>
+  <input type="number" min="0" id="vat" value="0.30" name="vat"></p>
+ <p>Зарплата всего: <strong>£<output name="amount" for="hours rate vat">0</output></strong></p>
+</form>
+<html>
+
+ 
+
+
